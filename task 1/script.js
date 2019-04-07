@@ -7,7 +7,7 @@ let money = prompt("Ваш бюджет на месяц?"),
     expense2 = prompt("Введите обязательную статью расходов в этом месяце"),
     cost2 = prompt("Во сколько обойдется?");
 let appData = {
-    "money": money,
+    "budget": money,
     "timeDate": time,
     "expenses": {
         expense1: cost1,
@@ -17,4 +17,4 @@ let appData = {
     "income": [],
     "savings": false
 };
-alert(money / 30);
+alert(appData.budget / 30);
